@@ -10,7 +10,7 @@ export default function Login() {
 
 	function handleSubmit(e: React.FormEvent) {
 		e.preventDefault();
-		axios.get('/')
+		axios.get('/login')
 			.then(resp => {
 				console.log(resp.data);
 			})

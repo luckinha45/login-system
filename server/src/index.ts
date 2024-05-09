@@ -1,9 +1,14 @@
 import express, {Express, Request, Response} from "express";
 import dotenv from 'dotenv';
 import {router} from './routes/autRoutes';
-import cors from 'cors';
+import mongoose from "mongoose";
+
 
 dotenv.config();
+
+mongoose.connect(<string>process.env.DB_CONN_STRING)
+	.then(() => console.log('MongoDB Connected'))
+	.catch((err) => console.log(err))
 
 const app = express();
 const port = process.env.PORT;
