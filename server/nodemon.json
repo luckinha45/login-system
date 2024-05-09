@@ -1,0 +1,9 @@
+{
+  "_exec": "concurrently \"npx tsc --watch\" \"ts-node src/index.ts\"",
+  "ignore": [".git", "node_modules/**/node_modules"],
+  "watch": ["src"],
+  "execMap": {
+    "ts": "node --require ts-node/register"
+  },
+  "ext": "ts"
+}
