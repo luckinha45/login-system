@@ -1,0 +1,4 @@
+mongodb:
+	user: luckinha45
+	pwd: cG56XvIgiUOa16MW
+	connString: mongodb+srv://luckinha45:cG56XvIgiUOa16MW@cluster0.wxsmerp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
